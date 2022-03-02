@@ -1,17 +1,17 @@
 {
-    "name": ":vendor/:package_name",
-    "description": ":package_description",
+    "name": "geronyy/laravel-dashboard-dummy-tile",
+    "description": "A DummyTile for spatie/laravel-dashboard",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "geronyy",
+        "laravel-dashboard-dummy-tile"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/geronyy",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://:vendor.be",
+            "name": "GW Webdesign",
+            "email": "info@gerowallisch.com",
+            "homepage": "https://gerowallisch.com",
             "role": "Developer"
         }
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\MyTile\\": "src"
+            "Geronyy\\DummyTile\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\MyTile\\Tests\\": "tests"
+            "Geronyy\\DummyTile\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\MyTile\\MyTileServiceProvider"
+                "Geronyy\\DummyTile\\DummyTileServiceProvider"
             ]
         }
     },

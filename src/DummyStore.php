@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\MyTile;
+namespace Geronyy\DummyTile;
 
 use Spatie\Dashboard\Models\Tile;
 
-class MyStore
+class DummyStore
 {
     private Tile $tile;
 
@@ -15,7 +15,7 @@ class MyStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName("myTileName");
+        $this->tile = Tile::firstOrCreateForName("dummy_data");
     }
 
     public function setData(array $data): self

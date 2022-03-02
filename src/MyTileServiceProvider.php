@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\MyTile;
+namespace Geronyy\DummyTile;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
-class MyTileServiceProvider extends ServiceProvider
+class DummyTileServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -16,11 +16,11 @@ class MyTileServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard-my-tile'),
-        ], 'dashboard-my-tile-views');
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard-dummy-tile'),
+        ], 'dashboard-dummy-tile-views');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard-my-tile');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard-dummy-tile');
 
-        Livewire::component('my-tile', MyTileComponent::class);
+        Livewire::component('dummy-tile', MyTileComponent::class);
     }
 }
